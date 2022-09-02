@@ -23,7 +23,7 @@ module "project" {
 # Shared VPC: https://cloud.google.com/docs/enterprise/best-practices-for-enterprise-organizations#centralize_network_control
 module "project" {
   source  = "terraform-google-modules/project-factory/google"
-  version = "~> 11.3.0"
+  version = "~> 11.4.0"
 
   name            = "{{.project_id}}"
   {{- if eq .parent_type "organization"}}
