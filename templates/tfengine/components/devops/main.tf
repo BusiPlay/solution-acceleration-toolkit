@@ -30,7 +30,7 @@ provider "google-beta" {
 }
 {{- end}}
 
-{{- if get . "exists"}}
+{{- if get .project "exists" false}}
 module "project" {
   source = "terraform-google-modules/project-factory/google//modules/project_services"
   version = "~> 11.3.0"
