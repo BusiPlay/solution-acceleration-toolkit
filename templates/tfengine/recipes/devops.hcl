@@ -54,6 +54,10 @@ schema = {
           type        = "string"
           pattern     = "^[a-z][a-z0-9\\-]{4,28}[a-z0-9]$"
         }
+        exists = {
+          description = "Whether or not the project exists already. Default to 'false'."
+          type        = "boolean"
+        }
         owners_group = {
           description          = <<EOF
             Group which will be given owner access to the project.
