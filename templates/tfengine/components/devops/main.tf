@@ -34,7 +34,7 @@ provider "google-beta" {
 module "project" {
   source = "terraform-google-modules/project-factory/google//modules/project_services"
   version = "~> 11.3.0"
-  project_id =  "{{.project_id}}"
+  project_id =  "{{.project.project_id}}"
   activate_apis = [
     "cloudbuild.googleapis.com",
     "cloudidentity.googleapis.com",
